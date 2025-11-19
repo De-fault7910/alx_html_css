@@ -1,46 +1,173 @@
-/* Task 1: Positioning with Flexbox */
-
-/* Body - vertical stack (header, main, footer) */
+/* Task 1 & 2 (keep these - already working) */
 body {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #333;
+  min-height: 100vh;
 }
 
-/* Main - horizontal row (article, aside) */
 main {
   display: flex;
   flex-direction: row;
   flex: auto;
 }
 
-/* Article - takes 2/3 of the width */
 article {
   flex: 2;
   overflow-y: auto;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 15px;
+  margin: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
-/* Aside - takes 1/3 of the width */
 aside {
   flex: 1;
   overflow-y: auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px 30px;
+  margin: 20px 20px 20px 0;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  font-style: italic;
+  color: #555;
 }
 
-/* Task 2: Responsive design - smartphone friendly */
 .works_on_smartphone {
   min-height: 100vh;
 }
 
-/* When screen is 768px or smaller → stack everything vertically */
 @media (max-width: 768px) {
   main {
     flex-direction: column;
   }
-  
-  article {
-    flex: 1;
+  article, aside {
+    margin: 15px;
   }
-  
-  aside {
-    flex: 1;
-  }
+}
+
+/* TASK 3 - BEAUTIFUL STYLING BEGINS HERE */
+
+header {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 30px;
+}
+
+nav ul li.logo {
+  font-size: 40px;
+  margin-right: 20px;
+  color: #ffd700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+h1, h2, h3 {
+  color: #4a0e8a;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  color: #5a2d91;
+  border-bottom: 3px solid #764ba2;
+  padding-bottom: 10px;
+  margin-top: 40px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+th {
+  background: #764ba2;
+  color: white;
+  padding: 15px;
+  text-align: left;
+}
+
+td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+  background: #f0e8ff;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-size: 14px;
+}
+
+footer a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Extra polish */
+img {
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+p {
+  line-height: 1.8;
+  font-size: 17px;
 }
