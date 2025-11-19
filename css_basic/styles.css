@@ -24,3 +24,23 @@ aside {
   flex: 1;
   overflow-y: auto;
 }
+
+/* Task 2: Responsive design - smartphone friendly */
+.works_on_smartphone {
+  min-height: 100vh;
+}
+
+/* When screen is 768px or smaller → stack everything vertically */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  
+  article {
+    flex: 1;
+  }
+  
+  aside {
+    flex: 1;
+  }
+}
