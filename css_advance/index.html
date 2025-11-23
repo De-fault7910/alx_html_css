@@ -11,13 +11,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 
-  <!-- Task 1: Import the style -->
+  <!-- Main Stylesheet -->
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- Favicon (optional) -->
+  <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
+
   <!-- HEADER -->
   <header class="header">
     <div class="container">
@@ -37,7 +38,23 @@
   </header>
 
   <!-- HERO -->
-    <!-- QUOTES SECTION -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <h1 class="hero__title">The Future<br>Starts Here</h1>
+        <p class="hero__subtitle">TechnoFair 2025 • March 15-17 • San Francisco, CA</p>
+        <div class="hero__actions">
+          <a href="#tickets" class="btn btn--primary btn--large">Get Your Ticket</a>
+          <a href="#speakers" class="btn btn--secondary btn--large">View Speakers</a>
+        </div>
+      </div>
+      <div class="hero__image">
+        <img src="images/hero-image.jpg" alt="TechnoFair 2025">
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTES SECTION -->
   <section class="quotes">
     <div class="container">
       <div class="quotes__grid">
@@ -68,48 +85,244 @@
 
   <!-- VIDEOS LIST SECTION -->
   <section class="videos">
-    <!-- (your existing videos code - keep exactly as is) -->
-    <!-- ... all your video cards ... -->
+    <div class="container">
+      <h2 class="section-title">Watch Past Talks</h2>
+      <p class="section-subtitle">Relive the best moments from TechnoFair 2024</p>
+
+      <div class="videos__grid">
+        <article class="video-card">
+          <div class="video-card__thumbnail">
+            <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Opening Keynote 2024">
+            <div class="video-card__play">
+              <svg width="68" height="68" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7L8 5z"/></svg>
+            </div>
+          </div>
+          <div class="video-card__info">
+            <h3>The Future of AI in Everyday Life</h3>
+            <p class="video-card__speaker">Dr. Amelia Torres</p>
+            <p class="video-card__meta">45:21 • 128K views</p>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <div class="video-card__thumbnail">
+            <img src="https://img.youtube.com/vi/9bZkp7q19f0/maxresdefault.jpg" alt="Web3 Revolution">
+            <div class="video-card__play">
+              <svg width="68" height="68" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7L8 5z"/></svg>
+            </div>
+          </div>
+          <div class="video-card__info">
+            <h3>Building the Decentralized Web</h3>
+            <p class="video-card__speaker">Jaden Kim</p>
+            <p class="video-card__meta">38:15 • 92K views</p>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <div class="video-card__thumbnail">
+            <img src="https://img.youtube.com/vi/kXYiU_JCYtU/maxresdefault.jpg" alt="Design in 2030">
+            <div class="video-card__play">
+              <svg width="68" height="68" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7L8 5z"/></svg>
+            </div>
+          </div>
+          <div class="video-card__info">
+            <h3>Design Systems That Scale</h3>
+            <p class="video-card__speaker">Lila Moreau</p>
+            <p class="video-card__meta">41:07 • 156K views</p>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <div class="video-card__thumbnail">
+            <img src="https://img.youtube.com/vi/ScMzIvxBSi4/maxresdefault.jpg" alt="Quantum Computing">
+            <div class="video-card__play">
+              <svg width="68" height="68" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7L8 5z"/></svg>
+            </div>
+          </div>
+          <div class="video-card__info">
+            <h3>Quantum Computing: From Theory to Reality</h3>
+            <p class="video-card__speaker">Prof. Raj Patel</p>
+            <p class="video-card__meta">52:33 • 201K views</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="videos__more">
+        <a href="#" class="btn btn--primary btn--large">View All Talks</a>
+      </div>
+    </div>
   </section>
 
   <!-- MEMBERSHIP / PRICING SECTION -->
-  <section class="membership">
-    <!-- (your existing pricing code - keep exactly as is) -->
-    <!-- ... all your pricing cards ... -->
+  <section class="membership" id="tickets">
+    <div class="container">
+      <h2 class="section-title">Choose Your Pass</h2>
+      <p class="section-subtitle">Get access to the biggest tech conference of 2025</p>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Standard Pass</h3>
+            <p class="price"><sup>$</sup>299</p>
+            <p class="billing">per person</p>
+          </div>
+          <ul class="features">
+            <li>Access to all main stage talks</li>
+            <li>Workshop sessions</li>
+            <li>Networking events</li>
+            <li>Conference materials</li>
+            <li>Lunch & coffee breaks</li>
+          </ul>
+          <a href="#" class="btn btn--outline">Get Standard Pass</a>
+        </div>
+
+        <div class="pricing-card featured">
+          <div class="ribbon">Most Popular</div>
+          <div class="pricing-header">
+            <h3>VIP Pass</h3>
+            <p class="price"><sup>$</sup>799</p>
+            <p class="billing">per person</p>
+          </div>
+          <ul class="features">
+            <li>Everything in Standard</li>
+            <li>Front-row reserved seating</li>
+            <li>VIP lounge access</li>
+            <li>Meet & greet with speakers</li>
+            <li>Exclusive after-party</li>
+            <li>Swag bag + merchandise</li>
+          </ul>
+          <a href="#" class="btn btn--primary">Get VIP Pass</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Group Pass</h3>
+            <p class="price"><sup>$</sup>249</p>
+            <p class="billing">per person (min. 5)</p>
+          </div>
+          <ul class="features">
+            <li>10% discount for teams</li>
+            <li>All Standard Pass benefits</li>
+            <li>Dedicated group coordinator</li>
+            <li>Team building workshops</li>
+            <li>Company logo on website</li>
+          </ul>
+          <a href="#" class="btn btn--outline">Get Group Pass</a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- FAQ SECTION -->
   <section class="faq">
-    <!-- (your existing FAQ code - keep exactly as is) -->
-    <!-- ... all your FAQ items ... -->
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-subtitle">Everything you need to know about TechnoFair 2025</p>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>When and where is TechnoFair 2025?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>TechnoFair 2025 will take place on <strong>March 15–17, 2025</strong> at the Moscone Center in San Francisco, California.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Are tickets refundable?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes! We offer a full refund if you cancel up to 30 days before the event. After that, tickets are transferable.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Will talks be recorded?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>All main stage talks will be professionally recorded and made available to attendees within 2 weeks after the event.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Is there a code of conduct?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, we follow a strict <a href="#">Code of Conduct</a> to ensure a safe and inclusive environment for everyone.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Can I volunteer or speak?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Absolutely! Speaker applications are closed for 2025, but volunteer sign-ups open in January. Stay tuned!</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>What COVID-19 safety measures are in place?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>We follow local health guidelines. Proof of vaccination or negative test may be required. Full policy will be emailed 2 weeks before the event.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- FOOTER - NOW IN THE CORRECT PLACE -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer__grid">
       <div class="footer__brand">
         <img src="images/logo-white.png" alt="TechnoFair 2025" class="footer__logo">
         <p>The world's leading technology conference bringing together innovators, developers, and visionaries.</p>
         <div class="footer__social">
-          <a href="#" aria-label="Twitter">X</a>
-          <a href="#" aria-label="LinkedIn">L</a>
-          <a href="#" aria-label="GitHub">G</a>
-          <a href="#" aria-label="YouTube">Y</a>
+          <a href="#" aria-label="Twitter"><svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          <a href="#" aria-label="GitHub"><svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 4-8 4z"/></svg></a>
         </div>
       </div>
+
       <div class="footer__links">
         <h4>Event</h4>
-        <ul><li><a href="#">Speakers</a></li><li><a href="#">Schedule</a></li><li><a href="#">Venue</a></li><li><a href="#">Sponsors</a></li></ul>
+        <ul>
+          <li><a href="#">Speakers</a></li>
+          <li><a href="#">Schedule</a></li>
+          <li><a href="#">Venue</a></li>
+          <li><a href="#">Sponsors</a></li>
+        </ul>
       </div>
+
       <div class="footer__links">
         <h4>Tickets</h4>
-        <ul><li><a href="#">Pricing</a></li><li><a href="#">Group Discounts</a></li><li><a href="#">Refund Policy</a></li><li><a href="#">FAQ</a></li></ul>
+        <ul>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Group Discounts</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
       </div>
+
       <div class="footer__links">
         <h4>Connect</h4>
-        <ul><li><a href="#">Contact Us</a></li><li><a href="#">Press</a></li><li><a href="#">Code of Conduct</a></li><li><a href="#">Privacy Policy</a></li></ul>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Code of Conduct</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
       </div>
     </div>
+
     <div class="footer__bottom">
       <div class="container">
         <p>© 2025 TechnoFair. All rights reserved. Made with <span style="color:#e91e63">♥</span> for the tech community.</p>
@@ -117,6 +330,7 @@
     </div>
   </footer>
 
+  <!-- FAQ Accordion Script -->
   <script>
     document.querySelectorAll('.faq-question').forEach(item => {
       item.addEventListener('click', () => {
