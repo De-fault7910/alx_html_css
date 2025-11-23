@@ -187,6 +187,148 @@
       </div>
     </div>
   </section>
+
+    <!-- MEMBERSHIP / PRICING SECTION -->
+  <section class="membership">
+    <div class="container">
+      <h2 class="section-title">Choose Your Pass</h2>
+      <p class="section-subtitle">Get access to the biggest tech conference of 2025</p>
+
+      <div class="pricing-grid">
+        <!-- Standard Pass -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Standard Pass</h3>
+            <p class="price"><sup>$</sup>299</p>
+            <p class="billing">per person</p>
+          </div>
+          <ul class="features">
+            <li>Access to all main stage talks</li>
+            <li>Workshop sessions</li>
+            <li>Networking events</li>
+            <li>Conference materials</li>
+            <li>Lunch & coffee breaks</li>
+          </ul>
+          <a href="#" class="btn btn--outline">Get Standard Pass</a>
+        </div>
+
+        <!-- VIP Pass (Featured) -->
+        <div class="pricing-card featured">
+          <div class="ribbon">Most Popular</div>
+          <div class="pricing-header">
+            <h3>VIP Pass</h3>
+            <p class="price"><sup>$</sup>799</p>
+            <p class="billing">per person</p>
+          </div>
+          <ul class="features">
+            <li>Everything in Standard</li>
+            <li>Front-row reserved seating</li>
+            <li>VIP lounge access</li>
+            <li>Meet & greet with speakers</li>
+            <li>Exclusive after-party</li>
+            <li>Swag bag + merchandise</li>
+          </ul>
+          <a href="#" class="btn btn--primary">Get VIP Pass</a>
+        </div>
+
+        <!-- Group Pass -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Group Pass</h3>
+            <p class="price"><sup>$</sup>249</p>
+            <p class="billing">per person (min. 5)</p>
+          </div>
+          <ul class="features">
+            <li>10% discount for teams</li>
+            <li>All Standard Pass benefits</li>
+            <li>Dedicated group coordinator</li>
+            <li>Team building workshops</li>
+            <li>Company logo on website</li>
+          </ul>
+          <a href="#" class="btn btn--outline">Get Group Pass</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- FAQ SECTION -->
+  <section class="faq">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-subtitle">Everything you need to know about TechnoFair 2025</p>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>When and where is TechnoFair 2025?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>TechnoFair 2025 will take place on <strong>March 15–17, 2025</strong> at the Moscone Center in San Francisco, California.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Are tickets refundable?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes! We offer a full refund if you cancel up to 30 days before the event. After that, tickets are transferable.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Will talks be recorded?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>All main stage talks will be professionally recorded and made available to attendees within 2 weeks after the event.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Is there a code of conduct?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, we follow a strict <a href="#">Code of Conduct</a> to ensure a safe and inclusive environment for everyone.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Can I volunteer or speak?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Absolutely! Speaker applications are closed for 2025, but volunteer sign-ups open in January. Stay tuned!</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>What COVID-19 safety measures are in place?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>We follow local health guidelines. Proof of vaccination or negative test may be required. Full policy will be emailed 2 weeks before the event.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   </footer>
+
+  <script>
+  document.querySelectorAll('.faq-question').forEach(item => {
+    item.addEventListener('click', () => {
+      const parent = item.parentElement;
+      parent.classList.toggle('active');
+    });
+  });
+</script>
 </body>
 </html>
