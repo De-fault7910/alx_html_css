@@ -291,3 +291,120 @@ body {
     text-align: center;
   }
 }
+
+/* ===================================
+   VIDEOS LIST SECTION – Task 4
+   =================================== */
+
+.videos {
+  padding: 10rem 0;
+  background-color: white;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: var(--fw-black);
+  color: var(--clr-dark);
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: 1.3rem;
+  color: var(--clr-gray);
+  max-width: 600px;
+  margin: 0 auto 4rem;
+}
+
+.videos__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.video-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 20px 40px rgba(108, 92, 231, 0.2);
+}
+
+.video-card__thumbnail {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-card__thumbnail img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.video-card:hover .video-card__thumbnail img {
+  transform: scale(1.1);
+}
+
+.video-card__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(108, 92, 231, 0.9);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.video-card:hover .video-card__play {
+  opacity: 1;
+}
+
+.video-card__info {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.video-card__info h3 {
+  font-size: 1.25rem;
+  font-weight: var(--fw-bold);
+  color: var(--clr-dark);
+  margin-bottom: 0.5rem;
+}
+
+.video-card__speaker {
+  color: var(--clr-primary);
+  font-weight: var(--fw-semi);
+  margin-bottom: 0.5rem;
+}
+
+.video-card__meta {
+  color: var(--clr-gray);
+  font-size: 0.9rem;
+}
+
+.videos__more {
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .videos {
+    padding: 6rem 0;
+  }
+  .section-title {
+    font-size: 2.5rem;
+  }
+}
